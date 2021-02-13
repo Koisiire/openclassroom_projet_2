@@ -1,0 +1,40 @@
+/* En-tête de page */
+h1
+{
+    font-size: 1.5em;
+}
+li
+{
+    font-size: 1.2em;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav li
+{
+    margin-right: 70px;
+}
+nav a
+{
+    color: #587bf9;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: #838486;
+    text-decoration: none;
+}
+/* Champs de recherche */
+.Filtre
+{
+    display: flex;
+}
+nav preference
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
