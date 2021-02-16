@@ -19,11 +19,14 @@ nav li
 }
 nav a
 {
-    color: #587bf9;
-    padding-bottom: 3px;
     text-decoration: none;
 }
-nav a:hover
+.visit
+{
+    color: #009DFF;
+    text-decoration: none;
+}
+a:hover
 {
     color: #838486;
     text-decoration: none;
@@ -37,28 +40,14 @@ nav preference
 {
     display: flex;
     flex-direction: row-reverse;
+    text-decoration: none;
+    margin: 50px;
 }
-.pref:nth-child(1)
+.btn
 {
-    border: 3px inset;
+    padding: 5px 5px;
+    color: black;
+    border: 2px solid black;
     border-radius: 25px;
-    width: 125px;    
-}
-.pref:nth-child(2)
-{
-    border: 3px inset;
-    border-radius: 25px;
-    width: 85px;
-}
-.pref:nth-child(3)
-{
-    border: 3px inset;
-    border-radius: 25px;
-    width: 125px;
-}
-.pref:nth-child(4)
-{
-    border: 3px inset;
-    border-radius: 25px;
-    width: 175px;
+    font-weight: bold;
 }
