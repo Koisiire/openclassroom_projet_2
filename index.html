@@ -5,41 +5,48 @@
     <title>Reservia</title>
 </html>
 <body>
-    <header class="Titre">
-        <nav>
-            <ul>
-                <li><a href="#" class="visit">Hébergements</a></li>
-                <li><a href="#" class="visit">Activités</a></li>
-                <li><a href="#" class="visit">S'inscrire</a></li>
-            </ul>
-            <h1><img src="image/Reservia.svg"/></h1>
-        </nav>
-    </header>
-    <h2>Trouvez votre hébergement pour des vacance de rêve</h2>
+<!-- Titre -->
+<header class="Titre">
+    <a href="index.html"><img class="logo" src="image/Reservia.svg" alt="Logo du moteur de recherche d'hébergement Reservia"></a>
+         <nav >
+             <a class="nav-lien" href="#">Hébergements</a> 
+             <a class="nav-lien" href="#">Activités</a> 
+         </nav>
+    
+    <a class="nav-inscription" href="#">S'inscrire</a>
+</header>
+<!-- Fin Titre -->
+<!-- Recherche -->
+    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
     <p>En plein centre ville ou en pleine nature</p>
     <div class="position">
         <i class="fas fa-map-marker-alt fa-2x" style="color: blue;"></i>
         <input class="position ville" type="text" name="" placeholder="Ville"/>
         <input type="submit" value="Recherche"/>
     </div>
-    <div class="Filtre">
-        <h1>Filtres</h1>
-          <nav class="preference">
-              <ul>
-                <i class="fas fa-money-bill-wave fa-2x" style="color: blue;"></i>
-                <li><a href="#" class="btn">Economique</a></li>
-                <i class="fas fa-male fa-2x" style="color: blue;"></i>
-                <li><a href="#" class="btn">Familial</a></li>
-                <i class="fas fa-heart fa-2x" style="color: blue;"></i>
-                <li><a href="#" class="btn">Romantique</a></li>
-                <i class="fas fa-dog fa-2x" style="color: blue;"></i>
-                <li><a href="#" class="btn">Animaux autorisés</a></li>
-              </ul>
-          </nav>
+    <div class="filtre">
+        <h3>Filtres</h3>
+    
+        <div class="contenu-filtre">
+            <button><span class="icone">
+                <i class="fas fa-money-bill-wave fa-fw"></i>
+                </span>Économique</button>
+            <button><span class="icone">
+                <i class="fas fa-child fa-fw"></i>
+                </span>Familial</button>
+            <button><span class="icone">
+                <i class="fas fa-heart fa-fw"></i>
+                </span>Romantique</button>
+            <button><span class="icone">
+                <i class="fas fa-dog fa-fw"></i>
+                </span>Animaux autorisés</button>
+        </div>
+    
     </div>
+    
     <div>
-         <i class="fad fa-info-circle" style="color: blue;"></i>
-         <p>Plus de 500 logements sont disponibles dans cette ville</p>
+         <p><i class="fas fa-info-circle" style="color: blue;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
+<!-- Fin Recherche -->
     <script src="https://kit.fontawesome.com/0b23a07234.js" crossorigin="anonymous"></script>
 </body>

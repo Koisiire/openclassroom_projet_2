@@ -1,12 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+body
+{
+    font-family: "Raleway", sans-serif;
+}
 /* En-tête de page */
-h1
+header
 {
-    font-size: 1.5em;
+    display: flex;
+    margin: 0;
+    align-items: center;
 }
-li
+nav
 {
-    font-size: 1.2em;
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
 }
+.logo
+{
+    margin-right: 900px;
+}
+.nav-lien
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    color:#838486;
+    text-decoration: none;
+}
+
+.nav-inscription
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    color:#838486;
+    text-decoration: none;
+}
+
 nav ul
 {
     list-style-type: none;
@@ -28,26 +61,60 @@ nav a
 }
 a:hover
 {
-    color: #838486;
+    color: #009DFF;
     text-decoration: none;
 }
 /* Champs de recherche */
-.Filtre
+.filtre 
 {
     display: flex;
+    flex-flow: row wrap;
 }
-nav preference
+  
+.filtre h3 
+{
+    margin-right: 2em;
+}
+  
+.contenu-filtre 
 {
     display: flex;
-    flex-direction: row-reverse;
-    text-decoration: none;
-    margin: 50px;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.btn
+  
+.contenu-filtre button 
 {
-    padding: 5px 5px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 25px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 2.813em;
+    background: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    border-left: transparent;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    padding: 0px 20px 0px 0px;
+    margin-right: 1.438em;
+    outline: none;
 }
+  
+.icone 
+{
+    background-color: #deebff;
+    padding: 0.813em;
+    border-radius: 100%;
+    color: #0065fc;
+    margin-right: 0.75em;
+    margin-left: -0.125em;
+}
+  
+.contenu-filtre button:hover 
+{
+    background-color: #0065fc;
+    color: white;
+    border-color: #0065fc;
+    border-left: none;
+}
+  
