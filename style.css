@@ -46,29 +46,98 @@ nav ul
     display: flex;
     justify-content: flex-end;
 }
+
 nav li
 {
     margin-right: 70px;
 }
+
 nav a
 {
     text-decoration: none;
 }
+
 .visit
 {
     color: #009DFF;
     text-decoration: none;
 }
+
 a:hover
 {
     color: #009DFF;
     text-decoration: none;
 }
 /* Champs de recherche */
+.titre_heb
+{
+    position: relative;
+    top: 15px;
+}
+
+.text_heb
+{
+    margin: 10px;
+}
+
+.position
+{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.icon_btn_rech
+{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+
+.position_ville
+{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 2px;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", Sans-serif;
+}
+
+.btn_rech
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-family: "Raleway", Sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn_clic
+{
+    color: cornsilk;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+
 .filtre 
 {
     display: flex;
     flex-flow: row wrap;
+    position: relative;
+    top: 35px;
 }
   
 .filtre h3 
@@ -117,4 +186,9 @@ a:hover
     border-color: #0065fc;
     border-left: none;
 }
-  
+
+.text_nom_log
+{
+    position: relative;
+    top: 55px;
+}

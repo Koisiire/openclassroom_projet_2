@@ -8,6 +8,7 @@
 <!-- Titre -->
 <header class="Titre">
     <a href="index.html"><img class="logo" src="image/Reservia.svg" alt="Logo du moteur de recherche d'hébergement Reservia"></a>
+
          <nav >
              <a class="nav-lien" href="#">Hébergements</a> 
              <a class="nav-lien" href="#">Activités</a> 
@@ -17,16 +18,22 @@
 </header>
 <!-- Fin Titre -->
 <!-- Recherche -->
-    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-    <p>En plein centre ville ou en pleine nature</p>
+    <h2 class="titre_heb">Trouvez votre hébergement pour des vacances de rêve</h2>
+
+    <p class="text_heb">En plein centre ville ou en pleine nature</p>
+
     <div class="position">
-        <i class="fas fa-map-marker-alt fa-2x" style="color: blue;"></i>
-        <input class="position ville" type="text" name="" placeholder="Ville"/>
-        <input type="submit" value="Recherche"/>
+        <span class="icon_btn_rech">     
+             <i class="fas fa-map-marker-alt" style="color: blue;"></i>
+        </span>
+             <input class="position_ville" type="search" placeholder="Marseille,France"/>
+        <span class="btn_rech">
+             <a class="btn_clic" href="#">Recherche</a>
+        </span>
     </div>
+
     <div class="filtre">
-        <h3>Filtres</h3>
-    
+        <h3>Filtres</h3>  
         <div class="contenu-filtre">
             <button><span class="icone">
                 <i class="fas fa-money-bill-wave fa-fw"></i>
@@ -40,13 +47,10 @@
             <button><span class="icone">
                 <i class="fas fa-dog fa-fw"></i>
                 </span>Animaux autorisés</button>
-        </div>
-    
+        </div>  
     </div>
     
-    <div>
-         <p><i class="fas fa-info-circle" style="color: blue;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
+         <p class="text_nom_log"><i class="fas fa-info-circle" style="color: blue;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 <!-- Fin Recherche -->
     <script src="https://kit.fontawesome.com/0b23a07234.js" crossorigin="anonymous"></script>
 </body>
