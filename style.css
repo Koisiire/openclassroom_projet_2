@@ -215,3 +215,129 @@ a:hover
     margin: 0;
 }
 
+/* Proposition D'Herbergement */
+.propo_heb
+{
+    background-color: #F2F2F2;
+    position: relative;
+    top: 65px;
+    width: 900px;
+    height: 50%;
+    border-radius: 2%;
+}
+
+.heb_text
+{
+    margin: 25px;
+    padding: 25px 0px 1px 10px; /* au dessus=px | a droite=px | en dessous=px | a gauche=px */
+}
+
+.list_heb
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px 0px 0px 10px;
+}
+
+.heb_1
+{
+    background-color: white;
+    width: 240px;
+    height: 170px;
+    margin: 25px;
+    border-radius: 7%;
+}
+
+.heb_2
+{
+    background-color: white;
+    width: 240px;
+    height: 170px;
+    margin: 25px;
+    border-radius: 7%;
+}
+
+.heb_3
+{
+    background-color: white;
+    width: 240px;
+    height: 170px;
+    margin: 25px;
+    border-radius: 7%;
+}
+
+.heb_4
+{
+    background-color: white;
+    width: 240px;
+    height: 170px;
+    margin: 25px;
+    border-radius: 7%;
+}
+
+.heb_5
+{
+    background-color: white;
+    width: 240px;
+    height: 170px;
+    margin: 25px;
+    border-radius: 7%;
+}
+
+.heb_6
+{
+    background-color: white;
+    width: 240px;
+    height: 170px;
+    margin: 25px;
+    border-radius: 7%;
+}
+
+.img_heb_1
+{
+    width: 225px;
+    height: 150px;
+    margin: 7px;
+    border-radius: 7%;
+}
+
+.img_heb_2
+{
+    width: 225px;
+    height: 150px;
+    margin: 7px;
+    border-radius: 7%;
+}
+
+.img_heb_3
+{
+    width: 225px;
+    height: 150px;
+    margin: 7px;
+    border-radius: 7%;
+}
+
+.img_heb_4
+{
+    width: 225px;
+    height: 150px;
+    margin: 7px;
+    border-radius: 7%;
+}
+
+.img_heb_5
+{
+    width: 225px;
+    height: 150px;
+    margin: 7px;
+    border-radius: 7%;
+}
+
+.img_heb_6
+{
+    width: 225px;
+    height: 150px;
+    margin: 7px;
+    border-radius: 7%;
+}
