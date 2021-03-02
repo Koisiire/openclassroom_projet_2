@@ -3,6 +3,7 @@ body
 {
     font-family: "Raleway", sans-serif;
 }
+
 /* En-tête de page */
 header
 {
@@ -18,16 +19,28 @@ nav
 }
 .logo
 {
-    margin-right: 900px;
+    margin-right: 800px;
+    padding: 35px 0px 0px 0px;
 }
 .nav-lien
 {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 70px;
+    margin-right: 75px;
     color:#838486;
     text-decoration: none;
+    padding: 35px 0px 0px 0px;
+}
+
+.nav-lien:nth-child(1)
+{
+    text-decoration: none;
+    border-top: 3px solid #009DFF;
+    border-width: 2px;
+    width: 130px;
+    text-align: center;
+    padding: 35px 0px 0px 0px;
 }
 
 .nav-inscription
@@ -38,23 +51,7 @@ nav
     margin-right: 70px;
     color:#838486;
     text-decoration: none;
-}
-
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav li
-{
-    margin-right: 70px;
-}
-
-nav a
-{
-    text-decoration: none;
+    padding: 35px 0px 0px 0px;
 }
 
 .visit
@@ -66,7 +63,7 @@ nav a
 a:hover
 {
     color: #009DFF;
-    text-decoration: none;
+    text-decoration: overline;
 }
 /* Champs de recherche */
 .titre_heb
@@ -237,66 +234,45 @@ a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
     padding: 10px 0px 0px 10px;
 }
 
 .hebergement
 {
     background-color: white;
-    width: 245px;
+    width: 237px;
     height: 200px;
-    margin: 25px;
+    margin: 20px;
     border-radius: 7%;
     padding: 5px 5px 10px 5px;
 }
 
-.img_heb_1
+.img_hebergement
 {
     object-fit: cover; /* pour pas que l'image sois écraser */
     width: 236px;
     height: 115px;
     border-top-left-radius: 20px; /* pour l'arrodie des bordure */
     border-top-right-radius: 20px;
-    
 }
 
-.img_heb_2
+.text_hebergement
 {
-    width: 225px;
-    height: 150px;
-    margin: 7px;
-    border-radius: 7%;
+    font-size: 0.95em;
+    margin: 10px;
 }
 
-.img_heb_3
+.titre_hebergement
 {
-    width: 225px;
-    height: 150px;
-    margin: 7px;
-    border-radius: 7%;
+    margin: 10px;
 }
 
-.img_heb_4
+.fa-star
 {
-    width: 225px;
-    height: 150px;
-    margin: 7px;
-    border-radius: 7%;
-}
-
-.img_heb_5
-{
-    width: 225px;
-    height: 150px;
-    margin: 7px;
-    border-radius: 7%;
-}
-
-.img_heb_6
-{
-    width: 225px;
-    height: 115px;
-    margin: 7px;
-    border-radius: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 0.7em;
+    margin: 0rem 0rem 0rem 0rem;
 }
