@@ -214,13 +214,18 @@ a:hover
 }
 
 /* Proposition D'Herbergement */
+.tout_herbergement
+{
+    display: flex;
+}
+
 .propo_heb
 {
     background-color: #F2F2F2;
     position: relative;
     top: 65px;
     width: 900px;
-    height: 50%;
+    height: 660px;
     border-radius: 2%;
 }
 
@@ -276,3 +281,53 @@ a:hover
     font-size: 0.7em;
     margin: 0rem 0rem 0rem 0rem;
 }
+
+/* Herbergement Populaire */
+
+.populaire
+{
+    background-color: #F2F2F2;
+    position: relative;
+    top: 65px;
+    width: 440px;
+    height: 50%;
+    margin-left: 35px;
+    border-radius: 2%;
+}
+
+.text_populaire
+{
+    margin: 25px;
+    padding: 25px 0px 1px 10px;
+}
+
+.list_populaire
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 0px 10px;
+}
+
+.herbergement_populaire
+{
+    display: flex;
+    background-color: white;
+    width: 350px;
+    height: 125px;
+    margin: 20px;
+    border-radius: 7%;
+    padding: 5px 5px 10px 5px;
+}
+ .img_populaire
+ {
+    object-fit: cover; /* pour pas que l'image sois écraser */
+    width: 150px;
+    height: 130px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+ }
+
+ .titre_populaire
+ {
+     margin: 10px;
+ }
