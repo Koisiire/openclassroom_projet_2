@@ -225,7 +225,7 @@ a:hover
     position: relative;
     top: 65px;
     width: 900px;
-    height: 660px;
+    height: 744px;
     border-radius: 2%;
 }
 
@@ -282,6 +282,12 @@ a:hover
     margin: 0rem 0rem 0rem 0rem;
 }
 
+.plus_hebergement
+{
+    margin-left: 25px;
+    padding: 0px 0px 1px 10px;
+}
+
 /* Herbergement Populaire */
 
 .populaire
@@ -290,15 +296,20 @@ a:hover
     position: relative;
     top: 65px;
     width: 440px;
-    height: 50%;
+    height: 657;
     margin-left: 35px;
     border-radius: 2%;
 }
 
 .text_populaire
 {
-    margin: 25px;
+    margin-left: 25px;
     padding: 25px 0px 1px 10px;
+}
+
+.icon_populaire
+{
+    margin-left: 100px;
 }
 
 .list_populaire
@@ -312,9 +323,9 @@ a:hover
 {
     display: flex;
     background-color: white;
-    width: 350px;
-    height: 125px;
-    margin: 20px;
+    width: 345px;
+    height: 136px;
+    margin: 30px;
     border-radius: 7%;
     padding: 5px 5px 10px 5px;
 }
@@ -322,7 +333,7 @@ a:hover
  {
     object-fit: cover; /* pour pas que l'image sois écraser */
     width: 150px;
-    height: 130px;
+    height: 140px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
  }
