@@ -2,13 +2,14 @@
 body
 {
     font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* En-tête de page */
 header
 {
     display: flex;
-    margin: 0;
     align-items: center;
 }
 nav
@@ -21,6 +22,7 @@ nav
 {
     margin-right: 800px;
     padding: 35px 0px 0px 0px;
+    margin-left: 50px;
 }
 .nav-lien
 {
@@ -66,15 +68,20 @@ a:hover
     text-decoration: overline;
 }
 /* Champs de recherche */
-.titre_heb
+.text_info_hebergement
+{
+    margin-left: 50px;
+}
+.titre_hebergement
 {
     position: relative;
-    top: 15px;
+    margin-top: 45px;
+    margin-left: 50px;
 }
 
-.text_heb
+.text_hebergement
 {
-    margin: px;
+    margin-left: 50px;
 }
 
 .position
@@ -82,7 +89,8 @@ a:hover
     display: flex;
     width: 100%;
     position: relative;
-    top: 10px;
+    margin-top: 17px;
+    margin-left: 50px;
 }
 
 .icon_btn_rech
@@ -134,7 +142,8 @@ a:hover
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    top: 35px;
+    margin-top: 29px;
+    margin-left: 50px;
 }
   
 .filtre h3 
@@ -172,7 +181,7 @@ a:hover
     padding: 0.813em;
     border-radius: 100%;
     color: #0065fc;
-    margin-right: 0.75em;
+    margin-right: 0.25em;
     margin-left: -0.125em;
 }
   
@@ -190,7 +199,7 @@ a:hover
     align-items: center;
     margin: 1rem 0 2rem 0;
     position: relative;
-    top: 55px;
+    margin-left: 50px;
 }
 
 .icon_dim
@@ -210,28 +219,28 @@ a:hover
 
 .text_nom_log
 {
-    margin: 0;
+    margin-left: 1px;
 }
 
 /* Proposition D'Herbergement */
 .tout_herbergement
 {
     display: flex;
+    margin-left: 50px;
 }
 
 .propo_heb
 {
     background-color: #F2F2F2;
     position: relative;
-    top: 65px;
-    width: 900px;
-    height: 744px;
+    width: 884px;
+    height: 628px;
     border-radius: 2%;
 }
 
 .heb_text
 {
-    margin: 25px;
+    margin-left: 42px;
     padding: 25px 0px 1px 10px; /* au dessus=px | a droite=px | en dessous=px | a gauche=px */
 }
 
@@ -240,23 +249,26 @@ a:hover
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0px 0px 10px;
+    margin-left: 40px;
 }
 
 .hebergement
 {
     background-color: white;
-    width: 237px;
-    height: 200px;
-    margin: 20px;
+    width: 246px;
+    height: 199px;
     border-radius: 7%;
-    padding: 5px 5px 10px 5px;
+    margin-bottom: 30px;
+    margin-inline-end: 30px;
 }
 
 .img_hebergement
 {
     object-fit: cover; /* pour pas que l'image sois écraser */
     width: 236px;
-    height: 115px;
+    height: 114px;
+    margin-left: 5px;
+    margin-top: 5px;
     border-top-left-radius: 20px; /* pour l'arrodie des bordure */
     border-top-right-radius: 20px;
 }
@@ -294,10 +306,9 @@ a:hover
 {
     background-color: #F2F2F2;
     position: relative;
-    top: 65px;
-    width: 440px;
-    height: 657;
-    margin-left: 35px;
+    width: 420px;
+    height: 630;
+    margin-left: 40px;
     border-radius: 2%;
 }
 
@@ -316,7 +327,6 @@ a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 0px 0px 10px;
 }
 
 .herbergement_populaire
@@ -324,21 +334,36 @@ a:hover
     display: flex;
     background-color: white;
     width: 345px;
-    height: 136px;
-    margin: 30px;
+    height: 145px;
+    margin-bottom: 30px;
+    margin-left: 35px;
     border-radius: 7%;
-    padding: 5px 5px 10px 5px;
 }
- .img_populaire
- {
+.img_populaire
+{
     object-fit: cover; /* pour pas que l'image sois écraser */
     width: 150px;
     height: 140px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
- }
+}
 
- .titre_populaire
- {
-     margin: 10px;
- }
+.titre_populaire
+{
+    margin: 10px;
+}
+
+ /* Fin de la page web */
+.fin_de_page
+{
+    margin-top: 10px;
+    display: grid;
+    background-color: #F2F2F2;
+    grid-column-start: 3;
+    grid-template-columns: 35% 30% 30%;
+}
+
+.info_fin_de_page
+{
+    margin-left: 50px;
+}
