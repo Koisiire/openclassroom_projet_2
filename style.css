@@ -358,6 +358,13 @@ a:hover
 {
     width: 1440px;
     height: 568px;
+    margin-left: 21px;
+    margin-top: 60px;
+}
+
+.titre_activites
+{
+    margin-left: 40px;
 }
 
 .list_activites
@@ -368,52 +375,157 @@ a:hover
 .activites
 {
     display: flex;
+    align-content: flex-start;
     background-color: white;
     margin-bottom: 30px;
     margin-left: 35px;
     border-radius: 7%;
 }
 
-.activites:nth-child(1)
+.activites_1
 {
-    width: 303px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+    width: 305px;
     height: 450px;
+    box-shadow: 5px 5px 15px #EFEFEF;
 }
 
-.activites:nth-child(2)
+.colonne_activites
 {
-    width: 307;
-    height: 241;
+    display: flex;
+    flex-direction: column;
 }
 
-.activites:nth-child(3)
+.activites_2
 {
-    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+    width: 305px;
+    height: 240px;
+    box-shadow: 5px 5px 15px #EFEFEF;
 }
 
-.activites:nth-child(4)
+.activites_3
 {
-    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+    width: 305px;
+    height: 165px;
+    box-shadow: 5px 5px 15px #EFEFEF;
 }
 
-.activites:nth-child(5)
+.activites_4
 {
-    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+    width: 305px;
+    height: 450px;
+    box-shadow: 5px 5px 15px #EFEFEF;
 }
 
-.activites:nth-child(6)
+.activites_5
 {
-    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+    width: 305px;
+    height: 200px;
+    box-shadow: 5px 5px 15px #EFEFEF;
 }
 
-.img_activites
+.activites_6
 {
-    object-fit: cover; /* pour pas que l'image sois écraser */
-    width: 150px;
-    height: 140px;
-    border-top-left-radius: 20px; /* pour l'arrodie des bordure */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+    width: 305px;
+    height: 215px;
+    box-shadow: 5px 5px 15px #EFEFEF;
+}
+
+
+.img_activites_1
+{
+    object-fit: cover;
+    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 305px;
+    height: 390px;
 }
+
+.img_activites_2
+{
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 305px;
+    height: 185px;
+}
+
+.img_activites_3
+{
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 305px;
+    height: 110px;
+}
+
+.img_activites_4
+{
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 305px;
+    height: 390px;
+}
+
+.img_activites_5
+{
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 305px;
+    height: 145px;
+}
+
+.img_activites_6
+{
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 305px;
+    height: 155px;
+}
+
+.txt_activites
+{
+    margin-left: 10px;
+}
+
  /* Fin de la page web */
 .fin_de_page
 {
