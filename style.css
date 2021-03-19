@@ -353,6 +353,67 @@ a:hover
     margin: 10px;
 }
 
+/* activités */
+.proposition_activites
+{
+    width: 1440px;
+    height: 568px;
+}
+
+.list_activites
+{
+    display: flex;
+}
+
+.activites
+{
+    display: flex;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 7%;
+}
+
+.activites:nth-child(1)
+{
+    width: 303px;
+    height: 450px;
+}
+
+.activites:nth-child(2)
+{
+    width: 307;
+    height: 241;
+}
+
+.activites:nth-child(3)
+{
+    
+}
+
+.activites:nth-child(4)
+{
+    
+}
+
+.activites:nth-child(5)
+{
+    
+}
+
+.activites:nth-child(6)
+{
+    
+}
+
+.img_activites
+{
+    object-fit: cover; /* pour pas que l'image sois écraser */
+    width: 150px;
+    height: 140px;
+    border-top-left-radius: 20px; /* pour l'arrodie des bordure */
+    border-top-right-radius: 20px;
+}
  /* Fin de la page web */
 .fin_de_page
 {
