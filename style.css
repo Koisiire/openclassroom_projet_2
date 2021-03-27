@@ -102,7 +102,7 @@ nav
     text-align: center;
 }
 
-.position_ville
+input[type=search]
 {
     border-right: none;
     border-left: none;
@@ -114,6 +114,14 @@ nav
     font-size: 1rem;
     font-weight: bold;
     font-family: "Raleway", Sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+input[type=search]:focus
+{
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
 }
 
 .btn_rech
@@ -605,4 +613,159 @@ nav
 btn_fin_de_page:hover
 {
     text-decoration: none;
+}
+
+/* Iphone 8 */
+@media screen and (max-width: 600px)
+{
+
+    /* En-tête de la page */
+    .Titre
+    {
+        display: block;
+    }
+
+    /* Champs de recherche */
+    .btn_clic
+    {
+        <i class="far fa-search"></i>
+    }
+    .filtre
+    {
+        padding: 10px 0px 0px 0px;
+    }
+    .contenu-filtre
+    {
+        display: flex;
+        padding: 10px 0px 0px 0px;
+    }
+    .icone
+    {
+        align-items: flex-end;
+        margin-left: 10px;
+    }
+    button
+    {
+        margin-block: 10px;
+    }
+
+    /* hebergement populaire */
+    .populaire
+    {
+        display: block;
+        margin-left: 1px;
+    }
+    .herbergement_populaire
+    {
+        width: 340px;
+        height: 150px;
+    }
+
+    /* Hebergement */
+    #tout_herbergement
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .propo_heb
+    {
+        background-color: white;
+    }
+    .list_heb
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergement
+    {
+        width: 340px;
+        height: 205px;
+        box-shadow: 5px 5px 15px #EFEFEF;
+    }
+    .img_hebergement
+    {
+        width: 325px;
+        height: 120px;
+    }
+
+    /* activitée */
+    #proposition_activites
+    {
+        display: block;
+        margin-top: 1000px;
+    }
+    .list_activites
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .activites_1
+    {
+        width: 335px;
+        height: 190px;
+    }
+    .activites_2
+    {
+        width: 335px;
+        height: 190px;
+    }
+    .activites_3
+    {
+        width: 335px;
+        height: 190px;
+    }
+    .activites_4
+    {
+        width: 335px;
+        height: 190px;
+    }
+    .activites_5
+    {
+        width: 335px;
+        height: 190px;
+    }
+    .activites_6
+    {
+        width: 335px;
+        height: 190px;
+    }
+
+    .img_activites_1
+    {
+        width: 335px;
+        height: 135px;
+    }
+    .img_activites_2
+    {
+        width: 335px;
+        height: 135px;
+    }
+    .img_activites_3
+    {
+        width: 335px;
+        height: 135px;
+    }
+    .img_activites_4
+    {
+        width: 335px;
+        height: 135px;
+    }
+    .img_activites_5
+    {
+        width: 335px;
+        height: 135px;
+    }
+    .img_activites_6
+    {
+        width: 335px;
+        height: 135px;
+    }
+
+    /* Fin de la page */
+    .fin_de_page
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 850px;
+    }
 }
