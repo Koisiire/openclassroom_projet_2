@@ -8,53 +8,55 @@ body
 
 /* En-tête de page */
 
-header
-{
+/* * HEADER */
+
+header {
     display: flex;
-    align-items: center;
-}
-nav
-{
-    grid-area: navbar;
-    display: flex;
-    align-items: center;
-}
-.logo
-{
-    margin-right: 800px;
-    padding: 35px 0px 0px 0px;
-    margin-left: 50px;
-}
-.nav-lien
-{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 75px;
-    color:#838486;
-    text-decoration: none;
-    padding: 35px 0px 0px 0px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.nav-lien:nth-child(1)
-{
-    text-decoration: none;
-    border-top: 3px solid #009DFF;
-    border-width: 2px;
-    width: 130px;
-    text-align: center;
-    padding: 35px 0px 0px 0px;
+#conteneur {
+    padding: 0px 3% 3%;
+    margin-bottom: 20px;
 }
 
-.nav-inscription
-{
-    list-style-type: none;
+/* NAV */
+
+nav {
+    margin-right: 50px;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 70px;
-    color:#009DFF;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 8%;
+    list-style: none;
+    width: 33%;
+}
+
+nav a {
     text-decoration: none;
-    padding: 35px 0px 0px 0px;
+    color: black;
+}
+
+.nav_lien a {
+    padding: 58px 30px 0 30px;
+}
+
+.nav_lien_signin {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.nav_lien a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 .visit
@@ -63,27 +65,23 @@ nav
     text-decoration: none;
 }
 
-.nav-lien:hover
-{
-    color: #009DFF;
-    text-decoration: none;
-}
+
 /* Champs de recherche */
-.text_info_hebergement
+/* .text_info_hebergement
 {
     margin-left: 35px;
-}
+} */
 .titre_hebergement
 {
     position: relative;
     margin-top: 45px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
-
+/* 
 .text_hebergement
 {
     margin-left: 50px;
-}
+} */
 
 .position
 {
@@ -91,7 +89,7 @@ nav
     width: 100%;
     position: relative;
     margin-top: 17px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .icon_btn_rech
@@ -159,7 +157,7 @@ input[type=search]:focus
     flex-flow: row wrap;
     position: relative;
     margin-top: 29px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
   
 .filtre h3 
@@ -215,7 +213,7 @@ input[type=search]:focus
     align-items: center;
     margin: 1rem 0 2rem 0;
     position: relative;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .icon_dim
@@ -241,17 +239,26 @@ input[type=search]:focus
 /* Proposition D'Herbergement */
 #tout_herbergement
 {
+    width: 100%;
     display: flex;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+}
+
+#tout_herbergement a 
+{
+    text-decoration: none;
+    color: black;
 }
 
 .propo_heb
 {
     background-color: #F2F2F2;
-    position: relative;
-    width: 884px;
-    height: 628px;
+    /* position: relative; */
+    width: 67%;
+    /* width: 884px;
+    height: 628px; */
     border-radius: 2%;
+    margin-right: auto;
 }
 
 .heb_text
@@ -260,27 +267,46 @@ input[type=search]:focus
     padding: 25px 0px 1px 10px; /* au dessus=px | a droite=px | en dessous=px | a gauche=px */
 }
 
+.fa-star {
+    color: #0065FC;
+    font-size: small;
+}
+
+.fas.fa-star.grey 
+{
+    color: #f2f2f2;
+}
 .list_heb
 {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 0px 0px 10px;
-    margin-left: 40px;
+    justify-content: space-evenly;
+    margin-top: -10px;
+ 
+    /* padding: 10px 0px 0px 10px;
+    margin-left: 40px; */
+}
+
+.list_heb a 
+{
+    width: 29%;
+    padding-bottom: 20px;
 }
 
 .hebergement
 {
+    margin: 0px 0px 20px 0px;
     background-color: white;
+    box-shadow: 5px 5px 15px #cecece;
+    border-radius: 20px;
+    padding: 5px;
     width: 246px;
-    height: 199px;
-    border-radius: 9%;
-    margin-bottom: 30px;
-    margin-right: 30px;
 }
 
 .img_hebergement
 {
     object-fit: cover; /* pour pas que l'image sois écraser */
+  
     width: 236px;
     height: 114px;
     margin-left: 5px;
@@ -291,15 +317,14 @@ input[type=search]:focus
 
 .titre_hebergement
 {
-    margin: 10px;
-    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .text_hebergement
 {
     font-size: 0.95em;
-    margin: 10px;
-    margin-left: 20px;
+    margin-top: 10px;
+    /* margin-left: 20px; */
     line-height: 2px;
 }
 
@@ -332,13 +357,77 @@ input[type=search]:focus
 }
 
 /* Herbergement Populaire */
+.populaire 
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 30%;
+}
 
-.populaire
+.text_populaire 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    margin-bottom: -35px;
+    margin-top: 25px;
+
+}
+
+.text_populaire h2 
+{
+    width: 65%;
+}
+
+.text_populaire i 
+{
+    font-size: 20px;
+}
+
+.populaire_figure 
+{
+    background-color: white;
+    border: 5px solid white;
+    box-shadow: 5px 5px 15px #cecece;
+    border-radius: 20px;
+    height: 140px;
+    display: flex;
+    margin: 40px 40px;
+    min-width: 290px;
+}
+
+.populaire_figure figcaption 
+{
+    margin-left: 5%;
+    max-width: 170px;
+}
+
+.populaire_figure img 
+{
+    width: 130px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    min-width: 130px;
+}
+
+.populaire_figure h3 
+{
+    margin: 10px 0px 0px 0px;
+}
+
+.populaire_figure p 
+{
+    margin: 5px 0px 25px 0px;
+    font-size: 14px;
+}
+
+
+/* .populaire
 {
     background-color: #F2F2F2;
     position: relative;
-    width: 420px;
-    height: 630px;
+    width: 30%;
     margin-left: 40px;
     border-radius: 2%;
 }
@@ -375,7 +464,7 @@ input[type=search]:focus
 .img_populaire
 {
     object-fit: cover; /* pour pas que l'image sois écraser */
-    width: 130px;
+    /* width: 130px;
     height: 135px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -413,13 +502,95 @@ input[type=search]:focus
 {
     margin-top: 45px;
     margin-left: 20px;   
-}
+}  */
 /* activités */
-#proposition_activites
+
+#proposition_activites {
+    margin-top: 50px;
+}
+
+.list_activites a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.activity_figure img {
+    border-radius: 20px;
+    box-shadow: 10px 5px 15px #cecece;
+    width: 290px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity_figure {
+    margin: 0px;
+    height: 100%;
+}
+
+.activity_figure figcaption {
+    position: relative;
+    bottom: 60px;
+    height: 60px;
+    width: 290px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.list_activites h3 {
+    padding-left: 5%;
+}
+
+.list_activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px 20px;
+    grid-template-areas:
+        "big1 small1 big2 small3"
+        "big1 small2 big2 small4";
+}
+
+.grande1 {
+    grid-area: big1;
+}
+
+.grande2 {
+    grid-area: big2;
+}
+
+.petite1 {
+    grid-area: small1;
+    height: 200px;
+}
+
+.petite2 {
+    grid-area: small2;
+    height: 200px;
+}
+
+.petite3 {
+    grid-area: small3;
+    height: 200px;
+}
+
+.petite4 {
+    grid-area: small4;
+    height: 200px;
+}
+
+
+
+/* #proposition_activites
 {
+
     width: 1440px;
     height: 568px;
     margin-left: 21px;
+    width: 100%;
     margin-top: 60px;
 }
 
@@ -587,353 +758,134 @@ input[type=search]:focus
 .txt_activites
 {
     margin-left: 10px;
-}
+} */
 
  /* Fin de la page web */
-.fin_de_page
-{
-    margin-top: 10px;
-    display: grid;
-    background-color: #F2F2F2;
-    grid-column-start: 3;
-    grid-template-columns: 35% 30% 30%;
+ footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 2% 3%;
 }
 
-.info_fin_de_page
-{
-    margin-left: 50px;
+.info_fin_de_page {
+    width: 40%;
 }
 
-.btn_fin_de_page
-{
+footer a {
     text-decoration: none;
-    color: #1D1D1D;
+    color: black;
 }
 
-btn_fin_de_page:hover
+@media screen and (max-width: 1250px) 
 {
-    text-decoration: none;
-}
+    body
+    {
+        width: 100%;
+    }
 
-/* Iphone 8 */
-@media screen and (max-width: 601px)
-{
-
-    /* En-tête de la page */
-    .Titre
+    #tout_herbergement
     {
         display: block;
     }
-    .nav-inscription
+
+    .list_heb
     {
-        display: flex;
-        flex-direction: row;
-        line-height: 20px;
+        width: 100%;
     }
 
-
-    /* Champs de recherche */
-    .filtre
+    .propo_heb
     {
-        padding: 10px 0px 0px 0px;
-    }
-    .contenu-filtre
-    {
-        display: flex;
-        padding: 10px 0px 0px 0px;
-    }
-    .icone
-    {
-        align-items: flex-end;
-        margin-left: 10px;
-    }
-    button
-    {
-        margin-block: 10px;
+        width: 100%;
     }
 
-    /* hebergement populaire */
     .populaire
     {
-        display: block;
-        margin-left: 1px;
-    }
-    .herbergement_populaire
-    {
-        width: 340px;
-        height: 150px;
+        width: 100%;
+        height: 650px;
     }
 
-    /* Hebergement */
+    .list-populaire
+    {
+        width: 100%;
+    }
+    
+
+    .list_activites
+    {
+        grid-template-areas:
+        "big1 big2 small3"
+        "small1 small2 small4";
+    }
+
+    .petite3
+    {
+        margin-top: 25%;
+    }
+
+
+}
+
+@media screen and (max-width: 950px) 
+{
+    .list_activites
+    {
+        grid-template-areas:
+        "big1 big2"
+        "small1 small2"
+        "small3 small4";
+    }
+
+    .petite3
+    {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 870px)
+{
+    .list_heb
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 250px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) 
+{
+    .fin_de_page
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+   
     #tout_herbergement
     {
         display: flex;
         flex-direction: column-reverse;
     }
-    .propo_heb
-    {
-        background-color: white;
-    }
+    
     .list_heb
     {
-        display: flex;
-        flex-direction: column;
-    }
-    .hebergement
-    {
-        width: 340px;
-        height: 205px;
-        box-shadow: 5px 5px 15px #EFEFEF;
-    }
-    .img_hebergement
-    {
-        width: 325px;
-        height: 120px;
+        margin-left: 125px;
     }
 
-    /* activitée */
-    #proposition_activites
-    {
-        display: block;
-        margin-top: 1000px;
-    }
-    .titre_activites
-    {
-        margin-left: 80px;
-    }
     .list_activites
     {
         display: flex;
         flex-direction: column;
-        margin-left: 45px;
-    }
-    .activites_1
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_2
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_3
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_4
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_5
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_6
-    {
-        width: 335px;
-        height: 190px;
     }
 
-    .img_activites_1
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_2
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_3
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_4
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_5
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_6
-    {
-        width: 335px;
-        height: 135px;
-    }
-
-    /* Fin de la page */
-    .fin_de_page
-    {
-        display: flex;
-        flex-direction: column;
-        margin-top: 850px;
-    }
-}
-
-/* Iphone 8 */
-@media screen and (max-width: 375px)
-{
-
-    /* En-tête de la page */
-    .Titre
-    {
-        display: block;
-    }
-    .nav-inscription
-    {
-        line-height: 2px;
-    }
-
-    /* Champs de recherche */
-    .filtre
-    {
-        padding: 10px 0px 0px 0px;
-    }
-    .contenu-filtre
-    {
-        display: flex;
-        padding: 10px 0px 0px 0px;
-    }
-    .icone
-    {
-        align-items: flex-end;
-        margin-left: 10px;
-    }
-    button
-    {
-        margin-block: 10px;
-    }
-
-    /* hebergement populaire */
-    .populaire
-    {
-        display: block;
-        margin-left: 1px;
-    }
-    .herbergement_populaire
-    {
-        width: 340px;
-        height: 150px;
-    }
-
-    /* Hebergement */
-    #tout_herbergement
-    {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .propo_heb
-    {
-        background-color: white;
-    }
-    .list_heb
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .hebergement
-    {
-        width: 340px;
-        height: 205px;
-        box-shadow: 5px 5px 15px #EFEFEF;
-    }
-    .img_hebergement
-    {
-        width: 325px;
-        height: 120px;
-    }
-
-    /* activitée */
-    #proposition_activites
-    {
-        display: block;
-        margin-top: 1000px;
-    }
-    .titre_activites
-    {
-        margin-left: 80px;
-    }
-    .list_activites
-    {
-        display: flex;
-        flex-direction: column;
-        margin-left: 45px;
-    }
-    .activites_1
+    .activity_figure
     {
         width: 335px;
         height: 190px;
-    }
-    .activites_2
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_3
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_4
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_5
-    {
-        width: 335px;
-        height: 190px;
-    }
-    .activites_6
-    {
-        width: 335px;
-        height: 190px;
-    }
-
-    .img_activites_1
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_2
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_3
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_4
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_5
-    {
-        width: 335px;
-        height: 135px;
-    }
-    .img_activites_6
-    {
-        width: 335px;
-        height: 135px;
-    }
-
-    /* Fin de la page */
-    .fin_de_page
-    {
-        display: flex;
-        flex-direction: column;
-        margin-top: 850px;
     }
 }
