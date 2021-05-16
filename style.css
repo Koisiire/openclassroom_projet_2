@@ -79,6 +79,7 @@ nav a
 .position
 {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     position: relative;
     margin-top: 17px;
@@ -260,7 +261,7 @@ input[type=search]:focus
 
 .heb_text
 {
-    margin-left: 42px;
+    margin-left: 25px;
     margin-bottom: 20px;
     padding: 25px 0px 1px 10px; /* au dessus=px | a droite=px | en dessous=px | a gauche=px */
 }
@@ -306,16 +307,6 @@ input[type=search]:focus
     line-height: 0.05rem;
 }
 
-h4
-{
-    display: block;
-    margin-block-start: none;
-    margin-block-end: none;
-    margin-inline-start: none;
-    margin-inline-end: none;
-    font-weight: none;
-    line-height: 0.02px;
-}
 
 .text_hebergement
 {
@@ -348,7 +339,7 @@ h4
 
 .plus_hebergement
 {
-    margin-left: 45px;
+    margin-left: 25px;
     padding: 0px 0px 1px 10px;
 }
 
@@ -443,7 +434,7 @@ h4
 {
     border-radius: 20px;
     box-shadow: 10px 5px 15px #cecece;
-    width: 290px;
+    width: 300px;
     height: 100%;
     object-fit: cover;
 }
@@ -459,7 +450,7 @@ h4
     position: relative;
     bottom: 60px;
     height: 60px;
-    width: 290px;
+    width: 300px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     display: flex;
@@ -477,7 +468,7 @@ h4
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px 65px;
+    gap: 40px 50px;
     grid-template-areas:
         "big1 small1 big2 small3"
         "big1 small2 big2 small4";
@@ -573,6 +564,8 @@ footer a
 
     .list_activites
     {
+        gap: 40px 2%;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "big1 big2 small3"
         "small1 small2 small4";
@@ -765,6 +758,8 @@ footer a
 
     #conteneur
     {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin: 0;
         padding: 0%;
@@ -843,7 +838,7 @@ footer a
     .nav_lien_signin
     {
         position: absolute;
-        right: 20px;
+        right: 40px;
     }
 
     .text_info_hebergement
@@ -877,11 +872,25 @@ footer a
     .position
     {
         margin-left: 5%;
+        width: 95%;
     }
 
     .filtre
     {
+        height: 225px;
         margin-left: 5%;
+    }
+
+    h3
+    {
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .contenu-filtre
+    {
+        line-height: 0.5px;
+        margin-top: 0;
+        text-align: none;
     }
 
     .fa-search
@@ -897,6 +906,11 @@ footer a
     .fa-search:hover
     {
         background-color: #009DFF;
+    }
+
+    .icon_nom
+    {
+        margin-left: 5%;
     }
 
     .populaire
@@ -920,8 +934,8 @@ footer a
     {
         margin: 0px;
         margin-top: 5%;
-        margin-left: 2%;
-        width: 335px;
+        margin-left: 5%;
+        width: 325px;
         height: 145px;
     }
 
@@ -932,12 +946,21 @@ footer a
 
     .hebergement
     {
-        margin-left: 7%;
+        box-shadow: 1px 1px 5px 3px #EFEFEF;
+        margin-left: 15%;
+    }
+
+    .btn_plus
+    {
+        line-height: 0.3rem;
+        padding: 0px 0px 5px 10px;
     }
 
     .plus_hebergement
     {
-        margin-left: 2%;
+        margin-left: 4%;
+        line-height: 0.02px;
+        padding: 0px 0px 5px 10px;
     }
 
     .activity_figure img
@@ -959,6 +982,17 @@ footer a
     .titre_activites
     {
         margin-left: 8%;
+    }
+
+    /* Fin de page */
+    .fin_de_page
+    {
+        margin-top: 49px;
+    }
+
+    .info_fin_de_page
+    {
+        margin-top: 50px;
     }
 
 }
