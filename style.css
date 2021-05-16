@@ -929,7 +929,7 @@ footer a
         width: 100%;
         height: 580px;
     }
-    
+
 
     .populaire_figure
     {
@@ -993,7 +993,9 @@ footer a
 
     .info_fin_de_page
     {
+        width: 95%;
         margin-top: 50px;
+        margin-left: 5%;
     }
 
 }
