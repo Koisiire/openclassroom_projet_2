@@ -612,8 +612,9 @@ footer a
 {
     .list_heb
     {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: 25% 25% 25%;
         width: 100%;
     }
 
@@ -622,6 +623,7 @@ footer a
         width: 335px;
         height: 200px;
         margin-left: 25%;
+        margin-bottom: 0px;
     }
 
     .img_hebergement
@@ -630,10 +632,55 @@ footer a
         height: 115px;
     }
 
+    #proposition_activites
+    {
+        margin-left: 10%;
+    }
+
     .fin_de_page
     {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 744px) 
+{
+    #proposition_activites
+    {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 820px) 
+{
+    .heb_text
+    {
+        width: 80%;
+        margin-left: 20%;
+    }
+    .list_heb
+    {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 690px) 
+{
+
+    .titre_activites
+    {
+        margin-left: 15%;
+    }
+
+    .list_activites
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
     }
 }
 
@@ -659,7 +706,8 @@ footer a
 
     .hebergement
     {
-        margin-left: 50%;
+        box-shadow: 1px 1px 5px 3px #EFEFEF;
+        margin-left: 15%;
     }
 
     .plus_hebergement
@@ -667,11 +715,9 @@ footer a
         margin-left: 15%;
     }
 
-
-    .list_activites
+    .titre_activites
     {
-        display: flex;
-        flex-direction: column;
+        margin-left: 15%;
     }
 
     .activity_figure
@@ -682,89 +728,8 @@ footer a
 
 }
 
-@media screen and (max-width: 540px)
+@media screen and (max-width: 541px)
 {
-    header
-    {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .navContent
-    {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .navContent
-    {
-        display: flex;
-    }
-
-    .nav_lien
-    {
-        margin-right: 0;
-        margin-left: 0px;
-    }
-
-    .nav_lien_signin
-    {
-        order: 1;
-    }
-
-    .propo_heb
-    {
-        margin-top: 10px;
-    }
-
-    .heb_text
-    {
-        margin-left: 17%;
-    }
-}
-
-@media screen and (max-width: 616px) 
-{
-    .info_fin_de_page
-    {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 490px) 
-{
-    .hebergement
-    {
-        margin-left: 1%;
-    }
-    
-    .heb_text
-    {
-        margin-left: 1%;
-    }
-
-    .plus_hebergement
-    {
-        margin-left: 1%;
-    }
-}
-
-@media screen and (max-width: 380px) 
-{
-    body
-    {
-        width: 100%;
-    }
-
-    #conteneur
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0%;
-    }
-
     header
     {
         display: grid;
@@ -775,7 +740,8 @@ footer a
 
     .logo
     {
-        height: 72px;
+        height: 90%;
+        margin-left: 10%;
     }
 
     nav
@@ -793,15 +759,30 @@ footer a
 
     li
     {
-        text-align: left;
+        text-align: center;
         position: unset;
-        margin-bottom: 50%;
-
+        padding: 0px;
     }
+
+    .nav_lien:hover 
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+
+    .nav_lien a:hover
+    {
+        border-top: none;
+    }
+
 
     .nav_lien
     {
-        margin-top: 10%;
+        margin-top: 40px;
+        padding: 0px;
+        padding-bottom: 15px;
+        width: 50%;
     }
 
     .nav_lien:nth-child(1)
@@ -843,7 +824,177 @@ footer a
 
     .text_info_hebergement
     {
-        margin-top: 50px;
+        margin-top: 80px;
+    }
+
+    .propo_heb
+    {
+        margin-top: 10px;
+    }
+
+    .heb_text
+    {
+        margin-left: 17%;
+    }
+}
+
+@media screen and (max-width: 616px) 
+{
+    .info_fin_de_page
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 501px) 
+{
+    .hebergement
+    {
+        margin-left: 1%;
+    }
+    
+    .heb_text
+    {
+        margin-left: 1%;
+    }
+
+    .list_heb
+    {
+        margin-left: 2%;
+    }
+
+    .plus_hebergement
+    {
+        margin-left: 1%;
+    }
+
+    #proposition_activites
+    {
+        margin-left: 2%;
+    }
+
+    .titre_activites
+    {
+        margin-left: 0%;
+    }
+
+    .list_activites
+    {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 380px) 
+{
+    body
+    {
+        width: 100%;
+    }
+
+    #conteneur
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+    }
+
+    header
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: 50% 50%;
+    }
+
+
+    .logo
+    {
+        height: 90%;
+        margin-left: 10%;
+    }
+
+    nav
+    {
+        display: flex;
+        margin-right: 0px;
+        justify-content: none;
+        direction: unset;
+    }
+
+    ul
+    {
+        padding-inline-start: 0%;
+    }
+
+    li
+    {
+        text-align: center;
+        position: unset;
+        padding: 0px;
+    }
+
+    .nav_lien:hover 
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+
+    .nav_lien a:hover
+    {
+        border-top: none;
+    }
+
+
+    .nav_lien
+    {
+        margin-top: 40px;
+        padding: 0px;
+        padding-bottom: 15px;
+        width: 50%;
+    }
+
+    .nav_lien:nth-child(1)
+    {
+        position: absolute;
+        left: 5px;
+    }
+
+    .nav_lien:nth-child(2)
+    {
+        position: absolute;
+        right: 0px;
+    }
+
+    .nav_lien li
+    {
+        padding: 0%;
+        margin-right: 50%;
+    }
+    
+    .nav_lien a
+    {
+        padding: 0%;
+    }
+    
+    .nav_lien ul
+    {
+        padding: 0px;
+        margin-right: 0%;
+        justify-content: flex-start;
+        position: relative left;
+    }
+
+    .nav_lien_signin
+    {
+        position: absolute;
+        right: 40px;
+    }
+
+    .text_info_hebergement
+    {
+        margin-top: 80px;
     }
 
     .btn_rech
@@ -940,9 +1091,21 @@ footer a
         height: 145px;
     }
 
+    .propo_heb
+    {
+        width: 100%;
+    }
+
     .heb_text
     {
         margin-left: 2%;
+        font-size: 1.4rem;
+    }
+
+    .list_heb a
+    {
+        padding-bottom: 0px;
+        margin-top: 10px;
     }
 
     .hebergement
@@ -951,17 +1114,21 @@ footer a
         margin-left: 15%;
     }
 
-    .btn_plus
+    .btn_plus a
     {
-        line-height: 0.3rem;
-        padding: 0px 0px 5px 10px;
+        line-height: 0px;      
     }
 
     .plus_hebergement
     {
         margin-left: 4%;
-        line-height: 0.02px;
-        padding: 0px 0px 5px 10px;
+        padding: 25px 0px 5px 10px;
+        margin-top: 5px;
+    }
+
+    #proposition_activites
+    {
+        margin-top: 0px;
     }
 
     .activity_figure img
