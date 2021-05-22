@@ -748,13 +748,12 @@ footer a
     {
         display: flex;
         margin-right: 0px;
-        justify-content: none;
         direction: unset;
     }
 
     ul
     {
-        padding-inline-start: 0%;
+        padding-inline-start: 0px;
     }
 
     li
@@ -813,7 +812,7 @@ footer a
         padding: 0px;
         margin-right: 0%;
         justify-content: flex-start;
-        position: relative left;
+        position: left;
     }
 
     .nav_lien_signin
@@ -917,7 +916,6 @@ footer a
     {
         display: flex;
         margin-right: 0px;
-        justify-content: none;
         direction: unset;
     }
 
@@ -982,7 +980,7 @@ footer a
         padding: 0px;
         margin-right: 0%;
         justify-content: flex-start;
-        position: relative left;
+        position: left;
     }
 
     .nav_lien_signin
@@ -998,8 +996,6 @@ footer a
 
     .btn_rech
     {
-        background-color: none;
-        color: none;
         padding: 0;
         border-radius: 1rem;
     }
@@ -1040,7 +1036,6 @@ footer a
     {
         line-height: 0.5px;
         margin-top: 0;
-        text-align: none;
     }
 
     .fa-search
@@ -1071,7 +1066,7 @@ footer a
 
     .text_populaire
     {
-        margin-block-end: 5%;
+        margin-block-end: 5px;
     }
 
     .list-populaire
