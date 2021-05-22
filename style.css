@@ -751,11 +751,6 @@ footer a
         direction: unset;
     }
 
-    ul
-    {
-        padding-inline-start: 0px;
-    }
-
     li
     {
         text-align: center;
@@ -917,11 +912,6 @@ footer a
         display: flex;
         margin-right: 0px;
         direction: unset;
-    }
-
-    ul
-    {
-        padding-inline-start: 0%;
     }
 
     li
