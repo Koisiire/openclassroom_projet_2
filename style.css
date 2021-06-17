@@ -868,6 +868,12 @@ footer a
 
 @media screen and (max-width: 501px) 
 {
+    .propo_heb
+    {
+        width: 90%;
+        margin-left: 10%;
+    }
+
     .hebergement
     {
         margin-left: 1%;
@@ -890,7 +896,8 @@ footer a
 
     #proposition_activites
     {
-        margin-left: 2%;
+        width: 85%;
+        margin-left: 15%;
     }
 
     .titre_activites
@@ -902,6 +909,99 @@ footer a
     {
         margin-left: 0%;
     }
+}
+
+@media screen and (max-width: 450px)
+{
+    .btn_rech
+    {
+        padding: 0;
+        border-radius: 1rem;
+    }
+
+    .btn_clic
+    {
+        display: none;
+    }
+
+    .media_icone
+    {
+        display: block;
+    }
+    .fa-search
+    {
+        width: 33px;
+        margin-left: 15px;
+        margin-top: 17px;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) 
+{
+    .propo_heb
+    {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    #proposition_activites
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 400px) 
+{
+    .propo_heb
+    {
+        width: 98%;
+        margin-left: 2%;
+    }
+
+    #proposition_activites
+    {
+        width: 92%;
+        margin-left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 391px) 
+{
+    .propo_heb
+    {
+        width: 98%;
+        margin-left: 2%;
+    }
+
+    #proposition_activites
+    {
+        width: 93%;
+        margin-left: 7%;
+    }
+
+}
+
+@media screen and (max-width: 387px) 
+{
+    .propo_heb
+    {
+        width: 98%;
+        margin-left: 2%;
+    }
+
+    #proposition_activites
+    {
+        width: 95%;
+        margin-left: 5%;
+    }
+
 }
 
 @media screen and (max-width: 380px) 
@@ -1004,6 +1104,7 @@ footer a
         right: 40px;
     }
 
+
     .text_info_hebergement
     {
         margin-top: 80px;
@@ -1013,6 +1114,7 @@ footer a
     {
         font-size: 1.6rem;
     }
+
     .btn_rech
     {
         padding: 0;
@@ -1032,17 +1134,19 @@ footer a
     .text_info_hebergement
     {
         margin-left: 5%;
+        width: 95%;
     }
 
     .position
     {
-        margin-left: 5%;
+        margin-left: 2%;
         width: 95%;
         margin: 30px 0px 0px 18.5px;
     }
 
     .filtre
     {
+        width: 95%;
         height: 185px;
         margin-left: 5%;
     }
@@ -1078,6 +1182,11 @@ footer a
         margin-left: 5%;
     }
 
+    #tout_herbergement
+    {
+        width: 100%;
+    }
+
     .populaire
     {
         width: 100%;
@@ -1102,13 +1211,13 @@ footer a
 
     .propo_heb
     {
-        width: 100%;
+        width: 95%;
     }
 
     .heb_text
     {
         margin-left: 2%;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .list_heb a
@@ -1120,7 +1229,6 @@ footer a
     .hebergement
     {
         box-shadow: 1px 1px 5px 3px #EFEFEF;
-        margin-left: 15%;
     }
 
     .btn_plus a
@@ -1137,8 +1245,8 @@ footer a
 
     #proposition_activites
     {
-        margin-top: 0px;
-        margin-left: 0%;
+        width: 80%;
+        margin-left: 0.5%;
     }
 
     .activity_figure img
